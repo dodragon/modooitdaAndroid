@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/allLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/all_round_background_8dp"
+    android:layout_marginHorizontal="28dp"
+    android:layout_marginBottom="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/cpLogo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:riv_corner_radius_top_left="8dp"
+            app:riv_corner_radius_bottom_right="8dp"
+            app:riv_border_color="#b7b7b7"
+            app:riv_border_width="0.2px"
+            android:src="@drawable/pagesample"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cpName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:lineSpacingExtra="-6.4sp"
+                    android:text="육회한녀석들" />
+
+                <TextView
+                    android:id="@+id/categoryDiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="10sp"
+                    android:textColor="#5c7cfa"
+                    android:text="방문 · 포장" />
+
+                <LinearLayout
+                    android:id="@+id/safetyMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="2.5dp"
+                    android:background="@drawable/page_safety_logo"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="1.6sp"
+                        android:text="모두안심"  />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#b1b2b2"
+                    android:lineSpacingExtra="-0.4sp"
+                    android:text="대표메뉴 - " />
+
+                <TextView
+                    android:id="@+id/menuName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textColor="#b1b2b2"
+                    android:lineSpacingExtra="-0.4sp"
+                    android:text="육사시미" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@drawable/star_trek"/>
+
+                <TextView
+                    android:id="@+id/revGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="10sp"
+                    android:textColor="#4a4a4a"
+                    android:lineSpacingExtra="-0.4sp"
+                    android:text="5.0"  />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/disPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#4a4a4a"
+                    android:lineSpacingExtra="-2.4sp"
+                    android:text="25,000원" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:textSize="14sp"
+                    android:textColor="#b1b2b2"
+                    android:lineSpacingExtra="-0.4sp"
+                    android:text="28,000원"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="-0.4sp"
+                    android:text="588m"
+                    android:textColor="#5c7cfa"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".BaobabCpEvent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108.5dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp">
+                
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="이벤트" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/currentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal"
+                        android:text="/" />
+                    <TextView
+                        android:id="@+id/allEa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/eventOption"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_more_cd"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="#40000000"/>
+        </LinearLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/event_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaobabCpPwChange">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.07"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="새 비밀번호를\n입력 해주시기 바랍니다."
+                android:paddingHorizontal="20dp"/>
+
+            <EditText
+                android:id="@+id/inputPw"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:hint="새 비밀번호 입력"
+                android:inputType="numberPassword"
+                android:letterSpacing="-0.07"
+                android:maxLength="4"
+                android:textColor="#515151"
+                android:textSize="14dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:theme="@style/certEditTheme" />
+
+            <EditText
+                android:id="@+id/inputPwCheck"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:hint="새 비밀번호 확인"
+                android:inputType="numberPassword"
+                android:letterSpacing="-0.07"
+                android:maxLength="4"
+                android:textColor="#515151"
+                android:textSize="14dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:theme="@style/certEditTheme" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#d8dce5"
+            android:enabled="false"
+            android:letterSpacing="-0.07"
+            android:text="변경"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

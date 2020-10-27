@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="86dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/accountHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:letterSpacing="-0.07"/>
+        <TextView
+            android:id="@+id/accountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.07"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/deleteBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_clear_white"/>
+
+</RelativeLayout>

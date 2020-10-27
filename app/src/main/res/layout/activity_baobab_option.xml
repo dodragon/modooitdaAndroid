@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".BaobabOption">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="81dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/backBtn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_back" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="-0.07"
+                        android:text="내 정보 수정"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:letterSpacing="-0.08"
+                        android:lineSpacingExtra="8sp"
+                        android:text="이메일"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/myEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="-0.07"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/cpOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/review_input_background"
+                        android:letterSpacing="-0.07"
+                        android:text="사장님 정보 수정"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:letterSpacing="-0.08"
+                        android:lineSpacingExtra="8sp"
+                        android:text="비밀번호"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:hint="비밀번호"
+                        android:inputType="textPassword"
+                        android:letterSpacing="-0.07"
+                        android:maxLength="20"
+                        android:textColor="#515151"
+                        android:textSize="14dp"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:theme="@style/certEditTheme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:letterSpacing="-0.08"
+                        android:lineSpacingExtra="8sp"
+                        android:text="비밀번호 확인"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:id="@+id/wordCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:hint="비밀번호 확인"
+                        android:inputType="textPassword"
+                        android:letterSpacing="-0.07"
+                        android:maxLength="20"
+                        android:textColor="#515151"
+                        android:textSize="14dp"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:theme="@style/certEditTheme" />
+
+                    <LinearLayout
+                        android:id="@+id/checkLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/pushAgree"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:letterSpacing="-0.07"
+                            android:text="Push 동의"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/saveBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp"
+                        android:background="@drawable/review_input_background"
+                        android:letterSpacing="-0.07"
+                        android:text="전체저장"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/logout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:textSize="12dp"
+                            android:textColor="#9b9b9b"
+                            android:letterSpacing="-0.08"
+                            android:lineSpacingExtra="8sp"
+                            android:text="로그아웃" />
+
+
+                        <Button
+                            android:id="@+id/leave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:textSize="12dp"
+                            android:textColor="#9b9b9b"
+                            android:letterSpacing="-0.08"
+                            android:lineSpacingExtra="8sp"
+                            android:text="회원탈퇴" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

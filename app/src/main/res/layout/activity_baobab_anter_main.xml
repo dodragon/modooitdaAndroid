@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BaobabAnterMain">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:fitsSystemWindows="true"
+                        app:layout_collapseMode="parallax">
+
+                        <Button
+                            android:id="@+id/openDrawer"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/drowericon" />
+
+                        <LinearLayout
+                            android:id="@+id/btn_gps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/addressText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="-0.02"
+                                android:lines="1"
+                                android:text="현 위치 탐색 중.."
+                                android:textAlignment="center"
+                                android:textColor="#3c3c3c"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="▼"
+                                android:textAlignment="center"
+                                android:textColor="@color/main_color"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:descendantFocusability="blocksDescendants">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="132dp"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+                                        <pl.pzienowicz.autoscrollviewpager.AutoScrollViewPager
+                                            android:id="@+id/ad_viewPager"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="132dp" />
+
+                                        <com.baobab.user.baobabflyer.server.util.CircleAnimIndicator
+                                            android:id="@+id/circleIndicator"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginBottom="7dp"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="42dp"
+                                        android:layout_marginHorizontal="32dp"
+                                        android:layout_marginVertical="32dp"
+                                        android:background="@drawable/search_background"
+                                        android:focusableInTouchMode="true">
+
+                                        <EditText
+                                            android:id="@+id/myEditText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="16dp"
+                                            android:background="@null"
+                                            android:hint="업체이름/음식종류"
+                                            android:imeOptions="actionSearch"
+                                            android:inputType="text"
+                                            android:letterSpacing="-0.07"
+                                            android:lines="1"
+                                            android:textColor="#b7b7b7"
+                                            android:textSize="15dp" />
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="16dp"
+                                            android:src="@drawable/ic_field_serach" />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/safe_cp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="82dp"
+                                        android:layout_marginHorizontal="28dp"
+                                        android:background="@drawable/safe_cp"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="모두안심식당"
+                                            android:fontFamily="@font/t_money_round_wind_extra_bold"
+                                            android:textSize="20sp"
+                                            android:textColor="@color/main_color"
+                                            android:letterSpacing="-0.09"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="안심하고 맛있게 배부르게"
+                                            android:fontFamily="@font/t_money_round_wind_regular"
+                                            android:textSize="12sp"
+                                            android:textColor="@color/main_color"
+                                            android:letterSpacing="-0.09"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/safe_cafe"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="82dp"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginHorizontal="28dp"
+                                        android:background="@drawable/safe_cafe"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="모두안심카페"
+                                            android:fontFamily="@font/t_money_round_wind_extra_bold"
+                                            android:textSize="20sp"
+                                            android:textColor="#9262dd"
+                                            android:letterSpacing="-0.09"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="안심해서 더 즐거운"
+                                            android:fontFamily="@font/t_money_round_wind_regular"
+                                            android:textSize="12sp"
+                                            android:textColor="#9262dd"
+                                            android:letterSpacing="-0.09"/>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/top_list_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="28dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="28dp"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/top_title"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:lines="1"
+                                                android:letterSpacing="-0.09"
+                                                android:textColor="#3c3c3c"
+                                                android:textSize="20dp"
+                                                android:lineSpacingMultiplier="1.6"
+                                                android:textStyle="bold" />
+                                            <TextView
+                                                android:id="@+id/top_sub_title"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="12dp"
+                                                android:textColor="#b7b7b7"
+                                                android:letterSpacing="-0.05"
+                                                android:lineSpacingMultiplier="1.6"/>
+                                        </LinearLayout>
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/top_list"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="24dp"
+                                            android:focusable="false"
+                                            android:focusableInTouchMode="true"
+                                            android:nestedScrollingEnabled="true" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/bot_list_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="24dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="28dp"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/bot_title"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:lines="1"
+                                                android:letterSpacing="-0.09"
+                                                android:textColor="#3c3c3c"
+                                                android:textSize="20dp"
+                                                android:lineSpacingMultiplier="1.6"
+                                                android:textStyle="bold" />
+                                            <TextView
+                                                android:id="@+id/bot_sub_title"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="12dp"
+                                                android:textColor="#b7b7b7"
+                                                android:letterSpacing="-0.05"
+                                                android:lineSpacingMultiplier="1.6"/>
+                                        </LinearLayout>
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/bot_list"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="24dp"
+                                            android:focusable="false"
+                                            android:focusableInTouchMode="true"
+                                            android:nestedScrollingEnabled="true" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/all_btn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center"
+                                        android:layout_marginBottom="38.5dp">
+
+                                        <ImageView
+                                            android:layout_width="48dp"
+                                            android:layout_height="48dp"
+                                            android:src="@drawable/all_btn"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="전체보기"
+                                            android:letterSpacing="-0.06"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:textColor="#b7b7b7"/>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#9F9F9F"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#efefef"
+                                android:paddingHorizontal="16dp"
+                                android:paddingTop="18.5dp"
+                                android:paddingBottom="39dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:textSize="10dp"
+                                    android:textColor="#3c3c3c"
+                                    android:textStyle="bold"
+                                    android:letterSpacing="-0.05"
+                                    android:lineSpacingMultiplier="1.75"
+                                    android:text="(주) 위대한"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10dp"
+                                        android:textColor="#b7b7b7"
+                                        android:text="대표\n주소\n사업자등록번호\n통신판매업신고\n민원담당자" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="16dp"
+                                        android:textSize="10dp"
+                                        android:textColor="#b7b7b7"
+                                        android:text="강병진 | 031-323-0858 | kbj@wedaehan.co.kr\n17057) 경기도 용인시 처인구 명지로15-20 용인시디지털산업진흥원 107호\n587-81-01368\n2019-용인기흥-0617\n김도현 | 031-323-0858 | yyok9407@wedaehan.co.kr"/>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:textSize="10dp"
+                                    android:textColor="#b7b7b7"
+                                    android:letterSpacing="-0.05"
+                                    android:lineSpacingMultiplier="1.5"
+                                    android:text="(주)위대한은 통신판매 중개 업체이며 앱내에서 결제되는 서비스에 대하여 환불, 민원, 이슈 등은\n(주)위대한에서 처리하며 모든 책임은 (주)위대한에게있습니다."/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/activity_baobab_drawer" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

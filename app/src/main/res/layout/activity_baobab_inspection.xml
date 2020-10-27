@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaobabInspection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/inspection"
+            android:layout_width="112dp"
+            android:layout_height="112dp" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#333333"
+            android:letterSpacing="-0.07"
+            android:gravity="center_horizontal"
+            android:text="네트워크가 불안정 합니다." />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="14dp"
+            android:textColor="#515151"
+            android:letterSpacing="-0.07"
+            android:gravity="center_horizontal"
+            android:text="Wi-Fi 연결 및 데이터 상태 확인 후
+다시 시도해주세요."/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

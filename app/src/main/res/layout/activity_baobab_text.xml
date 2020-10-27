@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaobabText1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[바오밥 입점 계약서]"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#202020"
+            android:textSize="30sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="'바오밥' (이하 '갑'이라 한다.) 와                     (이하 '을'이라 한다.)는 쌍방이 인터넷등 정보통신네트워크상에서 행하는 온라인 쇼핑 등 전자상거래 제휴와 관련하여 다음과 같이 계약을 체결하고 신의성실의 원칙에 따라 성실히 이행할 것을 약정한다."
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제 1조 [목 적]"
+                        android:textSize="16sp"
+                        android:textColor="#202020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="본 계약은 갑이 운영하는 인터넷 사이트(이하 '바오밥' 이라 한다)에 접속하여 서비스를 받는 갑의 이용자(이하 '고객' 이라 한다)에게 을이 상품 및 서비스(이하 '상품 등' 이라 한다)를 판매하기 위하여 운영하는 인터넷 사이트 바오밥에서 상품 등을 판매하는 데 필요한 제반상항 및 계약 당사자의 권리의무를 규정하여 상호이익의 증진을 도모함을 목적으로 한다."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제 2조 [용어의 정의]"
+                        android:textSize="16sp"
+                        android:textColor="#202020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="1. 본 계약에서 사용되는 용어의 정의는 다음 각 호와 같다"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="가. '바오밥' 이라 함은 이용자에게 정보 검색 및 예약/결제 서비스를 제공하기 위하여 갑이 구축 운영하는 인터넷 사이트(www.baobab.co.kr)를 말한다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="나. '전자상거래' 라 함은 상품 등을 거래함에 있어서 그 전부 또는 일부가 전자문서에 의하여 처리되는 거래의 방법으로 하는 상행위를 말한다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="다. '통신판매' 라 함은 우편전기통신 설비를 이용하여 음식 또는 용역 등을 거래할 수 있도록 설정된 인터넷상의 영업장을 말한다"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="2. 본 계약에서 정의된 용어의 적용범위는 본 계약에 한하며, 정의되지 않은 용어는 차후 별도 통지 한다"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제 3조 [갑의 의무]"
+                        android:textSize="16sp"
+                        android:textColor="#202020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1. '갑'은 '바오밥'에 접속한 고객이 본 계약에서 정한 방법으로 '을' 에 접속하여 이용할 수 있도록 하기 위한 솔루션 및 시스템의 기획, 구축 및 개선변경보완 운영을 수행키로 한다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="2. '갑'은 다음 각 호에 따라 '바오밥'을 운영하기로 하며, 각 호의 구체적 사항은 '갑'과 '을'의 상호협의에 따라 정하기로 한다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="가. '갑'은 '바오밥'을 통해 '을'이 '바오밥' 고객에게 노출이 되는 공간을 제공하고 고객이 '을'에 예약/결제가 가능하도록 한다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="나. '갑'은 '바오밥' 외 '갑'이 운영하는 인터넷 사이트(www.858.com) 를 통해 '을'의 상점을 고객에게 홍보하는데 노력하여야 한다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="3. '갑'은 전 2항 외 쌍방의 상호 이익증진을 위해 필요하다고 판단될 경우 '을'에서 기획한 이벤트, 상품 등을 '갑'의 다양한 채널을 통해 홍보 또는 노출될 수 있도록 노력하여야 한다."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제 4조 [을의 의무]"
+                        android:textSize="16sp"
+                        android:textColor="#202020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1. '을'은 '바오밥' 고객 검색 및 예약/결제 이용 서비스 편의를 위하여 '갑'이 제시한 상점 정보를 '갑'에 제공하여야 한다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="2. '을'은 다음과 같은 행위를 하지 않는다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="가. '을'은 '갑' 및 '바오밥'의 허위사실을 유포하지 아니한다"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="나. '을'은 '갑'의 사이트 '바오밥'을 이용함에 있어 악의로 '갑'과 거래를 체결 하여 '갑'의 정보, 기술을 타사에 공개,유포 하지 않는다. "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="다. '을'은 '갑'의 허가 없이 이 계약서를 제 3자에게 공개하지 않는다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="라. '을'은 '갑'의 이벤트, 홍보물 등을 '갑'과의 상호 이익을 위해 최대한 노출 및 협조를 위해 노력하여야 한다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="마. '을'은 위 3항 사항을 미 준수 시 법적 책임을 진다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="3. '을'은 '바오밥' 고객의 서비스 만족을 위해 고객에 최선의 노력을 다하며 고객이 이용 불만 사항에 대해서는 개선 방안을 검토한다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="4. '을'은 '바오밥' 고객 중 미성년자에 대해서는 불법 판매(주류/유흥 등)를 할 수 없으며 만약 법적 문제시 을이 모든 책임을 진다."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제 5조 [지불 금액]"
+                        android:textSize="16sp"
+                        android:textColor="#202020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="1. '갑'은 '을'에게 플랫폼을 제공함에 있어 고객이 '을'의 상품 등을 예약/결제 시 '을'은 '갑'에게 판매 수수료(이하 내부 수수료라 한다.) 및 카드 수수료(이하 외부수수료라 한다.) 를 지급하며 수수료 사항은 아래와 같다."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="가. '을'은 '갑'에게 '갑'이 운영하는 사이트 내 결제가 된 상품 등에 대해 판매금액의 3.5%를 내부 수수료로 지급한다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="2. '을'은 '갑'의 플랫폼 내 기본적으로 제공하는 서비스에 대해 무료로 이용할수 있다."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제6조 [계약의 효력]"
+                        android:textSize="16sp"
+                        android:textColor="#202020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="1. '갑'과 '을'은 이 계약을 체결하기 전에 충분한 협의를 거쳤으며, 계약 내용을 모두 숙지하였다."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="2. 이 계약서는 '을'의 '바오밥' 입점일부터 법적 효력이 발생된다."/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20       년       월       일"
+                            android:textAlignment="center"
+                            android:textColor="#202020"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:textColor="#202020"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:text="(갑) 상호명 : 바오밥"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#202020"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="50dp"
+                                android:text="대 표 명 : 강병진 (인)"
+                                 />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:textColor="#202020"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:text="(을) 상호명 :"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#202020"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="98dp"
+                                android:text="대 표 명 :            (인)"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="주소 : "
+                                android:textColor="#202020"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="30dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="바오밥"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#020202"
+                            android:textAlignment="center"
+                            android:layout_marginTop="20dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

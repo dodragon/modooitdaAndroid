@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menuModified">
+        <item>전체보기</item>
+        <item>메인 메뉴</item>
+        <item>사이드 메뉴</item>
+        <item>기타 메뉴</item>
+        <item>주류 및 음료</item>
+    </string-array>
+
+    <string-array name="storeType">
+        <item>한식</item>
+        <item>탕류/건강식</item>
+        <item>중국</item>
+        <item>일식</item>
+        <item>서양식</item>
+        <item>외국음식점(태국,인도)</item>
+        <item>돈까스,회,일식</item>
+        <item>술집/소주방/호프</item>
+        <item>카페,디저트</item>
+        <item>레스토랑/뷔페식</item>
+        <item>고기집</item>
+        <item>치킨</item>
+        <item>분식</item>
+        <item>페스트푸드,피자</item>
+        <item>족발,보쌈</item>
+        <item>냉면집/면류</item>
+        <item>도시락/간단식</item>
+        <item>곱창(막창)</item>
+        <item>포장마차(실내,실외)</item>
+        <item>찻집</item>
+        <item>다방</item>
+        <item>아이스크림,팥빙수</item>
+        <item>제과제빵</item>
+        <item>고속도로</item>
+        <item>공항</item>
+        <item>극장</item>
+        <item>백화점</item>
+        <item>아이스크림</item>
+        <item>유원지</item>
+        <item>전통찻집</item>
+        <item>철도역구내(지하철)</item>
+        <item>푸드트럭</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type1">
+        <item>순대</item>
+        <item>오리</item>
+        <item>닭갈비</item>
+        <item>감자탕</item>
+        <item>찜닭</item>
+        <item>샤브샤브</item>
+        <item>게 요리</item>
+        <item>해산물</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type2">
+        <item>염소고기</item>
+        <item>장어</item>
+        <item>추어탕</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type3">
+        <item>중국요리</item>
+        <item>양꼬치</item>
+        <item>훠궈</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type4">
+        <item>초밥</item>
+        <item>돈까스</item>
+        <item>횟집</item>
+        <item>복어</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type5">
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type6">
+        <item>인도</item>
+        <item>베트남</item>
+        <item>태국</item>
+        <item>필리핀</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type7">
+        <item>돈까스</item>
+        <item>회</item>
+        <item>일식</item>
+        <item>기타(직접입력)</item>
+    </string-array>
+
+    <string-array name="type8">
+        <item> 소주방 </item>
+        <item> 호프 </item>
+        <item> 주점 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type9">
+        <item> 커피샵  </item>
+        <item> 라이브카페 </item>
+        <item> 키즈카페 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type10">
+        <item> 레스토랑 </item>
+        <item> 뷔페식 </item>
+        <item> 패밀리 레스토랑 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type11">
+        <item> 삼겹살  </item>
+        <item> 갈비 </item>
+        <item> 한우 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type12">
+        <item> 통닭    </item>
+        <item> 치킨 </item>
+        <item> 닭강정 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type13">
+        <item> 분식 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type14">
+        <item> 패스트푸드  </item>
+        <item> 피자 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type15">
+        <item> 족발  </item>
+        <item> 보쌈 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type16">
+        <item> 메밀국수  </item>
+        <item> 막국수 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type17">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type18">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type19">
+        <item> 실내  </item>
+        <item> 실외 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type20">
+        <item> 전통찻집  </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type21">
+        <item> 다방  </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type22">
+        <item> 아이스크림  </item>
+        <item> 팥빙수 </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type23">
+        <item> 제과영업  </item>
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type24">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type25">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type26">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type27">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type28">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type29">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type30">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type31">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type32">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="type33">
+        <item> 기타(직접입력) </item>
+    </string-array>
+
+    <string-array name="menuOption">
+        <item>보통</item>
+        <item>곱빼기</item>
+        <item>1인분</item>
+        <item>2인분</item>
+        <item>3인분</item>
+        <item>4인분</item>
+        <item>3~4인분</item>
+        <item>5~6인분</item>
+        <item>1병</item>
+        <item>2병</item>
+        <item>3병</item>
+        <item>500cc</item>
+        <item>1000cc</item>
+        <item>2000cc</item>
+        <item>소</item>
+        <item>중</item>
+        <item>대</item>
+        <item>음료</item>
+        <item>포장</item>
+        <item>직접입력</item>
+    </string-array>
+
+    <string-array name="hour">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="minute">
+        <item>00</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="banks">
+
+        <item>은행 선택</item>
+        <item>신한은행(조흥)</item>
+        <item>IBK기업은행</item>
+        <item>우리은행</item>
+        <item>국민은행</item>
+        <item>KEB하나은행</item>
+        <item>SC제일은행</item>
+        <item>농협은행</item>
+        <item>카카오뱅크</item>
+        <item>대구은행</item>
+        <item>부산은행</item>
+        <item>광주은행</item>
+        <item>경남은행</item>
+        <item>전북은행</item>
+        <item>제주은행</item>
+        <item>산업은행</item>
+        <item>우체국</item>
+        <item>신협</item>
+        <item>수협은행</item>
+        <item>한국씨티은행</item>
+        <item>케이뱅크</item>
+
+    </string-array>
+    <string-array name="km">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+    <string-array name="pushTitle">
+
+        <item> 타이틀선택(없음)</item>
+        <item> (할인이벤트)</item>
+        <item> (서비스제공)</item>
+        <item> (선착순이벤트)</item>
+        <item> (메뉴소개)</item>
+        <item> (업체소개)</item>
+
+    </string-array>
+
+    <string-array name="cpKind">
+
+        <item>음식점</item>
+        <item>카페</item>
+
+    </string-array>
+
+    <string-array name="staff_rank">
+
+        <item>매니저</item>
+        <item>직원</item>
+
+    </string-array>
+
+    <string-array name="seoul">
+        <item>서울특별시 강남구</item>
+        <item>서울특별시 강동구</item>
+        <item>서울특별시 강북구</item>
+        <item>서울특별시 강서구</item>
+        <item>서울특별시 관악구</item>
+        <item>서울특별시 광진구</item>
+        <item>서울특별시 구로구</item>
+        <item>서울특별시 금천구</item>
+        <item>서울특별시 노원구</item>
+        <item>서울특별시 도봉구</item>
+        <item>서울특별시 동대문구</item>
+        <item>서울특별시 동작구</item>
+        <item>서울특별시 마포구</item>
+        <item>서울특별시 서대문구</item>
+        <item>서울특별시 서초구</item>
+        <item>서울특별시 성동구</item>
+        <item>서울특별시 성북구</item>
+        <item>서울특별시 송파구</item>
+        <item>서울특별시 양천구</item>
+        <item>서울특별시 영등포구</item>
+        <item>서울특별시 용산구</item>
+        <item>서울특별시 은평구</item>
+        <item>서울특별시 종로구</item>
+        <item>서울특별시 중구</item>
+        <item>서울특별시 중랑구</item>
+    </string-array>
+    <string-array name="gyeonggi">
+        <item>경기도 가평군</item>
+        <item>경기도 고양시 덕양구</item>
+        <item>경기도 고양시 일산동구</item>
+        <item>경기도 고양시 일산서구</item>
+        <item>경기도 과천시</item>
+        <item>경기도 광명시</item>
+        <item>경기도 경기도 광주시</item>
+        <item>경기도 구리시</item>
+        <item>경기도 군포시</item>
+        <item>경기도 남양주시</item>
+        <item>경기도 동두천시</item>
+        <item>경기도 부천시</item>
+        <item>경기도 성남시 분당구</item>
+        <item>경기도 성남시 수정구</item>
+        <item>경기도 성남시 중원구</item>
+        <item>경기도 수원시 권선구</item>
+        <item>경기도 수원시 영통구</item>
+        <item>경기도 수원시 장안구</item>
+        <item>경기도 수원시 팔달구</item>
+        <item>경기도 시흥시</item>
+        <item>경기도 안산시 단원구</item>
+        <item>경기도 안산시 상록구</item>
+        <item>경기도 안성시</item>
+        <item>경기도 안양시 동안구</item>
+        <item>경기도 안양시 만안구</item>
+        <item>경기도 양주시</item>
+        <item>경기도 양평군</item>
+        <item>경기도 여주시</item>
+        <item>경기도 연천군</item>
+        <item>경기도 오산시</item>
+        <item>경기도 용인시 기흥구</item>
+        <item>경기도 용인시 수지구</item>
+        <item>경기도 용인시 처인구</item>
+        <item>경기도 의왕시</item>
+        <item>경기도 의정부시</item>
+        <item>경기도 이천시</item>
+        <item>경기도 파주시</item>
+        <item>경기도 평택시</item>
+        <item>경기도 포천시</item>
+        <item>경기도 하남시</item>
+        <item>경기도 화성시</item>
+    </string-array>
+    <string-array name="incheon">
+        <item>인천광역시 강화군</item>
+        <item>인천광역시 계양구</item>
+        <item>인천광역시 남동구</item>
+        <item>인천광역시 동구</item>
+        <item>인천광역시 미주홀구</item>
+        <item>인천광역시 부평구</item>
+        <item>인천광역시 서구</item>
+        <item>인천광역시 연수구</item>
+        <item>인천광역시 옹진군</item>
+        <item>인천광역시 중구</item>
+    </string-array>
+    <string-array name="gangwon">
+        <item>강원도 강릉시</item>
+        <item>강원도 고성군</item>
+        <item>강원도 동해시</item>
+        <item>강원도 삼척시</item>
+        <item>강원도 속초시</item>
+        <item>강원도 양구군</item>
+        <item>강원도 양양군</item>
+        <item>강원도 영월군</item>
+        <item>강원도 원주시</item>
+        <item>강원도 인제군</item>
+        <item>강원도 정선군</item>
+        <item>강원도 철원군</item>
+        <item>강원도 춘천시</item>
+        <item>강원도 태백시</item>
+        <item>강원도 평창군</item>
+        <item>강원도 홍천군</item>
+        <item>강원도 화천군</item>
+        <item>강원도 횡성군</item>
+    </string-array>
+    <string-array name="busan">
+        <item>부산광역시 강서구</item>
+        <item>부산광역시 금정구</item>
+        <item>부산광역시 기장군</item>
+        <item>부산광역시 남구</item>
+        <item>부산광역시 동구</item>
+        <item>부산광역시 동래구</item>
+        <item>부산광역시 부산진구</item>
+        <item>부산광역시 북구</item>
+        <item>부산광역시 사상구</item>
+        <item>부산광역시 사하구</item>
+        <item>부산광역시 서구</item>
+        <item>부산광역시 수영구</item>
+        <item>부산광역시 연제구</item>
+        <item>부산광역시 영도구</item>
+        <item>부산광역시 중구</item>
+        <item>부산광역시 해운대구</item>
+    </string-array>
+    <string-array name="ulsanAndgyeongnam">
+        <item>울산광역시 남구</item>
+        <item>울산광역시 동구</item>
+        <item>울산광역시 북구</item>
+        <item>울산광역시 울주군</item>
+        <item>울산광역시 중구</item>
+        <item>경상남도 거제시</item>
+        <item>경상남도 거창군</item>
+        <item>경상남도 고성군</item>
+        <item>경상남도 김해시</item>
+        <item>경상남도 남해군</item>
+        <item>경상남도 밀양시</item>
+        <item>경상남도 사천시</item>
+        <item>경상남도 산청군</item>
+        <item>경상남도 양산시</item>
+        <item>경상남도 의령군</item>
+        <item>경상남도 진주시</item>
+        <item>경상남도 창녕군</item>
+        <item>경상남도 창원시 마산합포구</item>
+        <item>경상남도 창원시 마산회원구</item>
+        <item>경상남도 창원시 성산구</item>
+        <item>경상남도 창원시 의창구</item>
+        <item>경상남도 창원시 진해구</item>
+        <item>경상남도 통영시</item>
+        <item>경상남도 하동군</item>
+        <item>경상남도 함안군</item>
+        <item>경상남도 함양군</item>
+        <item>경상남도 합천군</item>
+    </string-array>
+    <string-array name="daeguAndgyeongbuk">
+        <item>대구광역시 남구</item>
+        <item>대구광역시 달서구</item>
+        <item>대구광역시 달성군</item>
+        <item>대구광역시 동구</item>
+        <item>대구광역시 북구</item>
+        <item>대구광역시 서구</item>
+        <item>대구광역시 수성구</item>
+        <item>대구광역시 중구</item>
+        <item>경상북도 경산시</item>
+        <item>경상북도 거여주시</item>
+        <item>경상북도 고령군</item>
+        <item>경상북도 구미시</item>
+        <item>경상북도 군위군</item>
+        <item>경상북도 김천시</item>
+        <item>경상북도 문경시</item>
+        <item>경상북도 봉화군</item>
+        <item>경상북도 상주시</item>
+        <item>경상북도 성주군</item>
+        <item>경상북도 안동시</item>
+        <item>경상북도 영덕군</item>
+        <item>경상북도 영양군</item>
+        <item>경상북도 영주시</item>
+        <item>경상북도 영천시</item>
+        <item>경상북도 예천군</item>
+        <item>경상북도 울릉군</item>
+        <item>경상북도 울진군</item>
+        <item>경상북도 의성군</item>
+        <item>경상북도 청도군</item>
+        <item>경상북도 청송군</item>
+        <item>경상북도 칠곡군</item>
+        <item>경상북도 포항시 남구</item>
+        <item>경상북도 포항시 북구</item>
+    </string-array>
+    <string-array name="choongchungs">
+        <item>세종특별자치시</item>
+        <item>대전광역시 대덕구</item>
+        <item>대전광역시 동구</item>
+        <item>대전광역시 서구</item>
+        <item>대전광역시 유성구</item>
+        <item>대전광역시 중구</item>
+        <item>충청남도 계룡시</item>
+        <item>충청남도 공주시</item>
+        <item>충청남도 금산군</item>
+        <item>충청남도 논산시</item>
+        <item>충청남도 당진시</item>
+        <item>충청남도 보령시</item>
+        <item>충청남도 부여군</item>
+        <item>충청남도 서산시</item>
+        <item>충청남도 서천군</item>
+        <item>충청남도 아산시</item>
+        <item>충청남도 예산군</item>
+        <item>충청남도 천안시 동남구</item>
+        <item>충청남도 천안시 서북구</item>
+        <item>충청남도 청양군</item>
+        <item>충청남도 태안군</item>
+        <item>충청남도 홍성군</item>
+        <item>충청북도 괴산군</item>
+        <item>충청북도 단양군</item>
+        <item>충청북도 보은군</item>
+        <item>충청북도 영동군</item>
+        <item>충청북도 옥천군</item>
+        <item>충청북도 음성군</item>
+        <item>충청북도 제천시</item>
+        <item>충청북도 증평군</item>
+        <item>충청북도 진천군</item>
+        <item>충청북도 청주시 상당구</item>
+        <item>충청북도 청주시 서원구</item>
+        <item>충청북도 청주시 청원구</item>
+        <item>충청북도 청주시 흥덕구</item>
+        <item>충청북도 충주시</item>
+    </string-array>
+    <string-array name="gwangjuAndjeonam">
+        <item>광주광역시 광산구</item>
+        <item>광주광역시 남구</item>
+        <item>광주광역시 동구</item>
+        <item>광주광역시 북구</item>
+        <item>광주광역시 서구</item>
+        <item>전라남도 강진군</item>
+        <item>전라남도 고흥군</item>
+        <item>전라남도 곡성군</item>
+        <item>전라남도 광양시</item>
+        <item>전라남도 구례군</item>
+        <item>전라남도 나주시</item>
+        <item>전라남도 담양군</item>
+        <item>전라남도 목포시</item>
+        <item>전라남도 무안군</item>
+        <item>전라남도 보성군</item>
+        <item>전라남도 순천시</item>
+        <item>전라남도 신안군</item>
+        <item>전라남도 여수시</item>
+        <item>전라남도 영광군</item>
+        <item>전라남도 영암군</item>
+        <item>전라남도 완도군</item>
+        <item>전라남도 장성군</item>
+        <item>전라남도 장흥군</item>
+        <item>전라남도 진도군</item>
+        <item>전라남도 함평군</item>
+        <item>전라남도 해남군</item>
+        <item>전라남도 화순군</item>
+    </string-array>
+    <string-array name="jeonbuk">
+        <item>전라북도 고창군</item>
+        <item>전라북도 군산시</item>
+        <item>전라북도 김제시</item>
+        <item>전라북도 남원시</item>
+        <item>전라북도 무주군</item>
+        <item>전라북도 부안군</item>
+        <item>전라북도 순창군</item>
+        <item>전라북도 완주군</item>
+        <item>전라북도 익산시</item>
+        <item>전라북도 임실군</item>
+        <item>전라북도 장수군</item>
+        <item>전라북도 전주시 덕진구</item>
+        <item>전라북도 전주시 완산구</item>
+        <item>전라북도 정읍시</item>
+        <item>전라북도 진안군</item>
+    </string-array>
+    <string-array name="jeju">
+        <item>제주특별자치도 서귀포시</item>
+        <item>제주특별자치도 제주시</item>
+    </string-array>
+</resources>

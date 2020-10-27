@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_marginTop="30dp"
+    android:layout_marginHorizontal="30dp">
+
+    <LinearLayout
+        android:id="@+id/info_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3c3c3c"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="4sp"
+            android:text="매장 정보"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/cp_info_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_dropdown2" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7dp"
+        android:background="#333333"/>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#b7b7b7"
+                android:lineSpacingExtra="12sp"
+                android:text="위치"/>
+
+            <TextView
+                android:id="@+id/addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="12sp"
+                android:text="경기 용인시 처인구 명지로 40번길 9"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#b7b7b7"
+                android:lineSpacingExtra="12sp"
+                android:text="영업시간"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="12sp"
+                android:text="11:00 ~ 24:00"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#b7b7b7"
+                android:lineSpacingExtra="12sp"
+                android:text="휴무일"/>
+
+            <TextView
+                android:id="@+id/closeDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="12sp"
+                android:text="정기휴무 없음"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#b7b7b7"
+                android:lineSpacingExtra="12sp"
+                android:text="주차 가능 차량"/>
+
+            <TextView
+                android:id="@+id/parking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="12sp"
+                android:text="3대"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/intro_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3c3c3c"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="4sp"
+            android:text="매장 소개"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/cp_intro_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_dropdown2"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7dp"
+        android:background="#333333"/>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:textSize="12sp"
+        android:textColor="#333333"
+        android:letterSpacing="-0.05"
+        android:lineSpacingExtra="10sp"
+        android:text="* 피자 파는 집 역북점을 찾아주셔서 감사합니다!!*
+현 상황에 맞는 위생관리를 위해 매장내 철저히 방역/소독하고
+있습니다~! 누구나 부담 없이 맛있는 피자를 즐길 수 있도록
+먹는 즐거움을 배로 드릴 수 있는 피자파는집이 되겠습니다^^!" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

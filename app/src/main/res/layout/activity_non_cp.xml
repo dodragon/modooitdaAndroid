@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NonCp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:id="@+id/cpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#3c3c3c"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="10sp"
+                android:text="피자파는집(역북점)" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b7b7b7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="31.5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#b7b7b7"
+                    android:lineSpacingExtra="12sp"
+                    android:text="위치"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="12sp"
+                    android:text="경기 용인시 처인구 명지로 40번길 9"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#b7b7b7"
+                    android:lineSpacingExtra="12sp"
+                    android:text="전화번호"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="12sp"
+                    android:text="031-123-1234"/>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="32dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="54dp"
+            android:layout_gravity="center"
+            android:src="@drawable/non_cp_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#eeeeee"
+            android:textSize="23dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/t_money_round_wind_extra_bold"
+            android:text="잇는 중입니다.\n조금만 기다려 주세요."/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

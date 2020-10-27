@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaobabPageKindSelect">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:paddingHorizontal="20dp"
+                        android:gravity="center_vertical">
+
+                        <Button
+                            android:id="@+id/escBtn"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_clear" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="음식종류"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f1f1f1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:layout_marginHorizontal="5dp"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton01"
+                                    android:tag="주변식당"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_1n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="주변식당"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton02"
+                                    android:tag="한식"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_2n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="한식"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton03"
+                                    android:tag="중식"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_3n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="중식"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton04"
+                                    android:tag="일식"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_4n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="일식"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton05"
+                                    android:tag="술집/포장마차"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_5n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="술집/포장마차"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton06"
+                                    android:tag="레스토랑"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_6n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="레스토랑"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton07"
+                                    android:tag="카페/디저트"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_7n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="카페/디저트"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton08"
+                                    android:tag="찜/탕"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_8n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="찜/탕"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton09"
+                                    android:tag="고기집"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_9n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="고기집"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton10"
+                                    android:tag="피자/치킨"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_10n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="피자/치킨"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton11"
+                                    android:tag="분식/도시락"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_11n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="분식/도시락"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="76dp"
+                                android:layout_height="90dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/toggleButton12"
+                                    android:tag="빵/면"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:gravity="center"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:background="@drawable/m_ico_12n"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:letterSpacing="-0.07"
+                                    android:text="빵/면"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_gravity="end"
+                android:background="@color/main_color"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="적용"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

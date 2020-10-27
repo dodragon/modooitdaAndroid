@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="-0.05"
+            android:text="쌀국수(택1) + 볶음밥(택1) + 사이드4,900(택1)"
+            android:textColor="#9b9b9b"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/percentAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:letterSpacing="-0.05"
+                android:text="20%"
+                android:textColor="#ff2650"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/disPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.05"
+                android:text="30,000원"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:letterSpacing="-0.05"
+                android:text="35,000원"
+                android:textColor="#9b9b9b"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:letterSpacing="-0.05"
+            android:text="상세보기"
+            android:textAlignment="textEnd"
+            android:textColor="#5fa0ff"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_dropdown_link" />
+    </RelativeLayout>
+</LinearLayout>

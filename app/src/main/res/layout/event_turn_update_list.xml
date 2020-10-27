@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="100dp"
+    android:background="@drawable/search_item_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.07"
+        android:text="수험생 특별 할인 이벤트"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/turnNum"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/turn_update_background"
+        android:gravity="center"
+        android:letterSpacing="-0.07"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryDark">#535353</item>
+        <item name="colorAccent">#0089ff</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">#0089ff</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="popupTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="certEditTheme">
+        <item name="colorAccent">@color/normalColor</item>
+        <item name="colorControlNormal">@color/normalColor</item>
+    </style>
+
+    <style name="editNoneTheme">
+        <item name="colorAccent">@color/mustAlpha</item>
+        <item name="colorControlNormal">@color/mustAlpha</item>
+    </style>
+
+    <style name="FullscreenDialog" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/FullscreenDialog.Window</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="FullscreenDialog.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/sliding_up</item>
+        <item name="android:windowExitAnimation">@anim/sliding_down</item>
+    </style>
+    <style name="whiteCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">#FFFFFF</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">#FFFFFF</item> <!-- checkbox text color -->
+    </style>
+</resources>

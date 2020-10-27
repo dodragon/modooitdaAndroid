@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".BaobabCpMenu">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp">
+
+                    <Button
+                        android:id="@+id/openDrawer"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/drowericon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="14dp"
+                            android:src="@drawable/logo_and" />
+
+                        <TextView
+                            android:id="@+id/userDivText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:letterSpacing="-0.03"
+                            android:text="사장님"
+                            android:textColor="@color/main_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="22dp"
+                                android:shadowColor="#0c000000"
+                                android:shadowDy="2"
+                                android:shadowRadius="6"
+                                android:textSize="14sp"
+                                android:textColor="#2c303e"
+                                android:letterSpacing="-0.1"
+                                android:text="안녕하세요. "/>
+                            <TextView
+                                android:id="@+id/mainText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="22dp"
+                                android:shadowColor="#0c000000"
+                                android:shadowDy="2"
+                                android:shadowRadius="6"
+                                android:textSize="14sp"
+                                android:textColor="#2c303e"
+                                android:letterSpacing="-0.1"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/userDivText2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="22dp"
+                                android:shadowColor="#0c000000"
+                                android:shadowDy="2"
+                                android:shadowRadius="6"
+                                android:textSize="14sp"
+                                android:textColor="#2c303e"
+                                android:letterSpacing="-0.1"
+                                android:text=" 사장님"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_businessManagement"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/white_round_square"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:elevation="2dp" >
+
+                        <RelativeLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/skyblue_circle_background">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_menu_store"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="업체 관리"
+                            android:elevation="5dp"
+                            android:textSize="14dp"
+                            android:textColor="#333333"
+                            android:letterSpacing="-0.07"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btn_couponManagement"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/white_round_square"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/skyblue_circle_background">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_menu_coupon"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="이벤트 관리"
+                            android:elevation="5dp"
+                            android:textSize="14dp"
+                            android:textColor="#333333"
+                            android:letterSpacing="-0.07"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btn_employeeManagement"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/white_round_square"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:gravity="center" >
+
+                        <RelativeLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/skyblue_circle_background">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_menu_employee"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="직원 관리"
+                            android:elevation="5dp"
+                            android:textSize="14dp"
+                            android:textColor="#333333"
+                            android:letterSpacing="-0.07"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#190000" />
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/mainMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/mainBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="-0.07"
+                                    android:text="메인 메뉴"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/ic_chevron_dropdown2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/main_menu_recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:nestedScrollingEnabled="true" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/main_menu_nonImg_odd_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/main_menu_nonImg_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/mainBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f5f5f5" />
+
+                        <LinearLayout
+                            android:id="@+id/sideMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/sideBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="-0.07"
+                                    android:text="사이드 메뉴"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/ic_chevron_dropdown2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/side_menu_recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:nestedScrollingEnabled="true" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/side_menu_nonImg_odd_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/side_menu_nonImg_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/sideBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f5f5f5" />
+
+                        <LinearLayout
+                            android:id="@+id/ectMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ectBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="-0.07"
+                                    android:text="기타 메뉴"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/ic_chevron_dropdown2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/ect_menu_recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:nestedScrollingEnabled="true" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/ect_menu_nonImg_odd_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/ect_menu_nonImg_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/ectBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f5f5f5" />
+
+                        <LinearLayout
+                            android:id="@+id/drinkMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/drinkBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="-0.07"
+                                    android:text="주류/음료"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/ic_chevron_dropdown2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/drink_menu_recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:nestedScrollingEnabled="true" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/drink_menu_nonImg_odd_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/drink_menu_nonImg_recyclerView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="true"
+                                        android:nestedScrollingEnabled="true" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:id="@+id/drinkBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f5f5f5" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@layout/activity_baobab_drawer" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

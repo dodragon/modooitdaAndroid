@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".BaobabPage">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/openDrawer"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginHorizontal="16dp"
+                                android:background="@drawable/drowericon" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/search_background"
+                                android:focusableInTouchMode="true">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="17dp"
+                                    android:src="@drawable/ic_field_serach" />
+
+                                <EditText
+                                    android:id="@+id/searchBar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="45dp"
+                                    android:layout_marginRight="12dp"
+                                    android:background="@null"
+                                    android:hint="식당명/음식종류/지역명"
+                                    android:imeOptions="actionSearch"
+                                    android:inputType="text"
+                                    android:letterSpacing="-0.07"
+                                    android:lines="1"
+                                    android:textColor="#515151"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#b7b7b7" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="14.5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/location_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:src="@drawable/location" />
+
+                                <TextView
+                                    android:id="@+id/locationTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:lines="1"
+                                    android:letterSpacing="-0.02"
+                                    android:textAlignment="center"
+                                    android:textColor="#3c3c3c"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="19.5dp"
+                                android:background="@drawable/search_item_background">
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:src="@drawable/sort" />
+
+                                <ToggleButton
+                                    android:id="@+id/sortBy_filter"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:background="@null"
+                                    android:letterSpacing="-0.05"
+                                    android:lineSpacingExtra="6sp"
+                                    android:textColor="#5c7cfa"
+                                    android:textOff="거리순"
+                                    android:textOn="인기순"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/tab_all"
+                            android:layout_width="64dp"
+                            android:layout_height="31dp"
+                            android:tag="a"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:textSize="16sp"
+                                android:textColor="#b7b7b7"
+                                android:letterSpacing="-0.05"
+                                android:lineSpacingExtra="4sp"
+                                android:gravity="center"
+                                android:text="전 체"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/main_color"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/tab_safe"
+                            android:layout_width="64dp"
+                            android:layout_height="31dp"
+                            android:tag="s"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:textSize="16sp"
+                                android:textColor="#b7b7b7"
+                                android:letterSpacing="-0.05"
+                                android:lineSpacingExtra="4sp"
+                                android:gravity="center"
+                                android:text="모두안심"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/main_color"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/tab_sale"
+                            android:layout_width="64dp"
+                            android:layout_height="31dp"
+                            android:tag="p"
+                            android:layout_marginHorizontal="25dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:textSize="16sp"
+                                android:textColor="#b7b7b7"
+                                android:letterSpacing="-0.05"
+                                android:lineSpacingExtra="4sp"
+                                android:gravity="center"
+                                android:text="모두특가"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/main_color"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#b7b7b7"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:descendantFocusability="blocksDescendants">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:layout_marginTop="40.5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/mainTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18sp"
+                                        android:textColor="#3c3c3c"
+                                        android:textStyle="bold"
+                                        android:letterSpacing="-0.05"
+                                        android:lineSpacingExtra="5sp"
+                                        android:text="모두잇다의 특가상품" />
+                                    <TextView
+                                        android:id="@+id/subTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10sp"
+                                        android:textColor="#b7b7b7"
+                                        android:letterSpacing="-0.05"
+                                        android:lineSpacingExtra="6sp"
+                                        android:text="세트로 먹으면 더 할인 받을 수 있어요."/>
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/tobRecyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:nestedScrollingEnabled="true" />
+
+                                <LinearLayout
+                                    android:id="@+id/topMore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/all_btn"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:textColor="#b7b7b7"
+                                        android:letterSpacing="-0.05"
+                                        android:lineSpacingExtra="7sp"
+                                        android:gravity="center_horizontal"
+                                        android:text="더보기" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:layout_marginTop="32dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/mainTitle2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18sp"
+                                        android:textColor="#3c3c3c"
+                                        android:textStyle="bold"
+                                        android:letterSpacing="-0.05"
+                                        android:lineSpacingExtra="5sp"
+                                        android:text="모두잇다의 특가상품" />
+                                    <TextView
+                                        android:id="@+id/subTitle2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10sp"
+                                        android:textColor="#b7b7b7"
+                                        android:letterSpacing="-0.05"
+                                        android:lineSpacingExtra="6sp"
+                                        android:text="세트로 먹으면 더 할인 받을 수 있어요."/>
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/botRecyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="true"
+                                    android:nestedScrollingEnabled="true" />
+
+                                <LinearLayout
+                                    android:id="@+id/botMore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="24dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/all_btn"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:textColor="#b7b7b7"
+                                        android:letterSpacing="-0.05"
+                                        android:lineSpacingExtra="7sp"
+                                        android:gravity="center_horizontal"
+                                        android:text="더보기" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <include layout="@layout/activity_baobab_drawer" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

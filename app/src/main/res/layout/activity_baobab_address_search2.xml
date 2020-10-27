@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".BaobabAddressSearch2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="match_parent"
+                android:background="#5c7cfa"
+                android:textColor="#ffffff"
+                android:text="지도로 직접 선택 하기"
+                android:textSize="18sp"
+                android:letterSpacing="-0.09"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

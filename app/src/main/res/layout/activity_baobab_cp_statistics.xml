@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BaobabCpStatistics">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="업체 통계"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="22dp">
+
+                <Button
+                    android:id="@+id/days"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:letterSpacing="-0.07"
+                    android:text="날짜별"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/months"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:letterSpacing="-0.07"
+                    android:text="월별"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40000000"/>
+
+                <View
+                    android:id="@+id/unUse_line"
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="24dp"
+                    android:visibility="gone"
+                    android:background="@color/main_color"/>
+
+                <View
+                    android:id="@+id/used_line"
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="123dp"
+                    android:visibility="gone"
+                    android:background="@color/main_color"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/dateLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/search_item_background">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="-0.07"
+                    android:textColor="#000000"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/allSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="-0.07"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/useSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="-0.07"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/canSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="-0.07"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:nestedScrollingEnabled="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

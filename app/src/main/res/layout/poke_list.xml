@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_round_non_border_white"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="8dp"
+    android:elevation="4dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="110dp"
+            android:layout_height="76dp"
+            android:scaleType="centerCrop" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_check_off"
+            android:button="@null"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cpName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:letterSpacing="-0.03"
+            android:text="정성중화요리 양꼬치"/>
+
+        <TextView
+            android:id="@+id/cpAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#333333"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:letterSpacing="-0.03"
+            android:text="경기 수원시 영통구 청명남로 25 클래시아 209호"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textSize="10dp"
+            android:textColor="@color/main_color"
+            android:letterSpacing="-0.03"
+            android:text="나와의 거리 1.6km"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:paddingHorizontal="17dp"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/coupon_total_background"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_field_serach"/>
+
+                    <EditText
+                        android:id="@+id/searchBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="#515151"
+                        android:hint="이메일 또는 휴대폰번호"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:letterSpacing="-0.07"
+                        android:maxLines="1"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="16dp"
+                    android:text="*검색 후 아래에 원하는 사용자의 계정을 선택해 주세요."/>
+
+                <LinearLayout
+                    android:id="@+id/mother"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

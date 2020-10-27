@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".BaobabLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:letterSpacing="-0.07"
+                android:text="로그인"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:letterSpacing="-0.08"
+                        android:lineSpacingExtra="8sp"
+                        android:text="이메일"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:id="@+id/inputEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:hint="이메일을 입력하세요."
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:focusable="true"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textSize="14dp"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:theme="@style/certEditTheme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:letterSpacing="-0.08"
+                        android:lineSpacingExtra="8sp"
+                        android:text="비밀번호"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:id="@+id/inputPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:hint="비밀번호를 입력하세요."
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textSize="14dp"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:theme="@style/certEditTheme" />
+
+                    <Button
+                        android:id="@+id/btn_baobabLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/review_input_background"
+                        android:letterSpacing="-0.07"
+                        android:text="로그인"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/findEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:padding="3dp"
+                            android:background="@null"
+                            android:letterSpacing="-0.07"
+                            android:text="이메일찾기"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="|"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <Button
+                            android:id="@+id/findPassWord"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:padding="3dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@null"
+                            android:letterSpacing="-0.07"
+                            android:text="비밀번호찾기"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="|"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <Button
+                            android:id="@+id/btn_baobabJoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:background="@null"
+                            android:letterSpacing="-0.07"
+                            android:text="회원가입"
+                            android:textColor="#000000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/goHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/coupon_total_background"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="홈페이지로 가기"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:letterSpacing="-0.07" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:id="@+id/btn_home"
+                        android:layout_width="70dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/homeImg"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/tabicon_ic_home" />
+
+                        <TextView
+                            android:id="@+id/homeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.07"
+                            android:text="홈"
+                            android:textAlignment="center"
+                            android:textColor="#333333"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_review"
+                        android:layout_width="70dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/reviewImg"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/tabicon_ic_reviews" />
+
+                        <TextView
+                            android:id="@+id/reviewText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:letterSpacing="-0.07"
+                            android:text="리뷰관리"
+                            android:textAlignment="center"
+                            android:textColor="#333333"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_favorites"
+                        android:layout_width="70dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/favImg"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/tabicon_ic_favorites" />
+
+                        <TextView
+                            android:id="@+id/favText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:letterSpacing="-0.07"
+                            android:text="단골식당"
+                            android:textAlignment="center"
+                            android:textColor="#333333"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_callhis"
+                        android:layout_width="70dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/callImg"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/tabicon_ic_called" />
+
+                        <TextView
+                            android:id="@+id/callText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.07"
+                            android:text="전화내역"
+                            android:textAlignment="center"
+                            android:textColor="#333333"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

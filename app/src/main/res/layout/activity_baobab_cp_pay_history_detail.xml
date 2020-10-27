@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaobabCpPayHistoryDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:paddingHorizontal="20dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="결제승인 내역"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:letterSpacing="-0.07"
+                android:textSize="22dp"/>
+
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/coupon_total_background"
+                    android:layout_marginTop="12dp"
+                    android:nestedScrollingEnabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="23dp"
+                    android:background="#afafaf"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="총액"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/allPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="24,000원"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="할인액"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="4,000원"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="결제액"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="20,000원"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="주문번호"
+                            android:textSize="18dp"
+                            android:textColor="#333333"/>
+                        <TextView
+                            android:id="@+id/orderNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="P328749387736020191223171104934"
+                            android:textSize="18dp"
+                            android:textColor="#333333"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="티켓번호"
+                            android:textSize="18dp"
+                            android:textColor="#333333"/>
+                        <TextView
+                            android:id="@+id/ticketNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="P54920193281279342383131726098255"
+                            android:textSize="18dp"
+                            android:textColor="#333333"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

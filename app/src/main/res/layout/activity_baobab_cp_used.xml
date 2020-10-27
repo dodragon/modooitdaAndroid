@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaobabCpUsed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="예약정보"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#979797" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/orderNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#202020"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/payDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#202020"
+                        android:layout_marginVertical="10dp"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/useDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#202020"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#979797" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/consumerId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#202020"/>
+
+                    <TextView
+                        android:id="@+id/used"
+                        android:layout_width="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#FF2200"/>
+
+                    <LinearLayout
+                        android:id="@+id/call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#6799FF"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/call"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFE400"
+                            android:textSize="20dp"
+                            android:text="고객님께 안심전화 걸기"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#979797" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/listMother"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#979797" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/totalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="-"/>
+                    <TextView
+                        android:id="@+id/totalDisPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="="/>
+                    <TextView
+                        android:id="@+id/totalSales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#FF2200"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/scanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#613F2C"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="스캔하기"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FF5E00"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="접수하기"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

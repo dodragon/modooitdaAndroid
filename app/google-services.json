@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "292390611265",
+    "firebase_url": "https://baobabflyer.firebaseio.com",
+    "project_id": "baobabflyer",
+    "storage_bucket": "baobabflyer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292390611265:android:ef69ca28014044da",
+        "android_client_info": {
+          "package_name": "com.baobab.user.baobabflyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292390611265-e72d20d572g3uokqoquv5mott1k23cq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.baobab.user.baobabflyer",
+            "certificate_hash": "36dc137912ded10377743e49a4865b6413a6407a"
+          }
+        },
+        {
+          "client_id": "292390611265-t3mlj83v006msul8toet9bc7bqmb571d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnrp8n0mAzwQw9UfAUZo-7QtUWSRMEQhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292390611265-t3mlj83v006msul8toet9bc7bqmb571d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292390611265-fbrgv464t992l6lraccn6h1fceph4a1u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "wedaehan.Baobab",
+                "app_store_id": "1503269254"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292390611265:android:ae10e14a9cc0e9218c99c0",
+        "android_client_info": {
+          "package_name": "com.wedaehan.user.modooitda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292390611265-6fa48co8lh8pfoguf101jf8mgk0pjvlv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wedaehan.user.modooitda",
+            "certificate_hash": "36dc137912ded10377743e49a4865b6413a6407a"
+          }
+        },
+        {
+          "client_id": "292390611265-t3mlj83v006msul8toet9bc7bqmb571d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnrp8n0mAzwQw9UfAUZo-7QtUWSRMEQhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292390611265-t3mlj83v006msul8toet9bc7bqmb571d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292390611265-fbrgv464t992l6lraccn6h1fceph4a1u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "wedaehan.Baobab",
+                "app_store_id": "1503269254"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
